@@ -327,3 +327,37 @@ label[for="search-field"]{
     border-radius:50%;
 }
 /*Test comment for Git commit*/
+
+
+/*Word Carousel*/
+.word-carousel{
+    width:16rem;
+    margin:15vh auto;
+}
+.I-love{
+    font-size:3rem;
+    position:relative;
+    width:19rem;
+}
+.I-love:after {
+    background-color: #109188;
+    padding:4px;
+    border-radius: 12px;
+    content: "Venice";
+    animation: word-carousel 4s infinite;
+
+}
+@keyframes word-carousel {
+    25% {
+        content: "jellies";
+    }
+    50% {
+        content: "tenis";
+    }
+    75% {
+        content:"pennies";
+    }
+    100%{
+        content: "Venice";
+    }
+}
