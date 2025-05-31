@@ -343,21 +343,21 @@ label[for="search-field"]{
     background-color: #109188;
     padding:4px;
     border-radius: 12px;
-    content: "Venice";
+    content: " Venice";
     animation: word-carousel 4s infinite;
 
 }
 @keyframes word-carousel {
     25% {
-        content: "jellies";
+        content: " jellies";
     }
     50% {
-        content: "tenis";
+        content: " tenis";
     }
     75% {
-        content:"pennies";
+        content:" pennies";
     }
     100%{
-        content: "Venice";
+        content: " Venice";
     }
 }
