@@ -377,6 +377,24 @@ label[for="search-field"]{
     /*display: inline-block;*/
     width:1fr;
 }
-.stripe1{background-color: blue}
-.stripe2{background-color: white}
-.stripe3{background-color: red}
+.fstripe1{background-color: blue}
+.fstripe2{background-color: white}
+.fstripe3{background-color: red}
+
+/*German Flag*/
+.german-flag{
+    height: 150px;
+    width: calc(150px*5/3);
+    margin:10vh auto;
+    border: 2px solid black;
+    /*display:grid;*/
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+    display:block;
+}
+.german{
+    width:100%;
+    height:33%;
+}
+.gstripe1{background-color: #000000;}
+.gstripe2{background-color: #DE0002;}
+.gstripe3{background-color: #FFCE00;}
