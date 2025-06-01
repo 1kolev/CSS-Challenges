@@ -389,12 +389,53 @@ label[for="search-field"]{
     border: 2px solid black;
     /*display:grid;*/
     /*grid-template-rows: 1fr 1fr 1fr;*/
-    display:block;
+    display:flex;
+    flex-direction: column;
 }
 .german{
+    padding:0;
     width:100%;
-    height:33%;
+    height:33.33%;
 }
 .gstripe1{background-color: #000000;}
 .gstripe2{background-color: #DE0002;}
 .gstripe3{background-color: #FFCE00;}
+
+
+/*Madagascar flag*/
+.madagascar-flag {
+    height: 150px;
+    width: calc(150px * 3 / 2);
+    margin: 10vh auto;
+    border: 2px solid black;
+    display: flex;
+}
+
+.mstripe1 {
+    background-color: white;
+    height: 100%;
+    width: 33.33%;
+}
+
+.horizontal-mstripes {
+    display: flex;
+    flex-direction: column;
+    width: 66.67%;
+    height: 100%;
+}
+
+.mstripe2 {
+    background-color: #FC3C32;
+    width: 100%;
+    height: 50%;
+}
+
+.mstripe3 {
+    background-color: #007E39;
+    width: 100%;
+    height: 50%;
+}
+
+/*--white: #FFFFF;*/
+/*--red: #FC3E32;*/
+/*--green: #007E39;*/
