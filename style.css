@@ -459,3 +459,30 @@ label[for="search-field"]{
     grid-row: 2/span 3;
     grid-column: 3;
 }
+
+
+/*Japan flag*/
+.japan-flag{
+    height: 150px;
+    width: calc(150px * 3 / 2);
+    border:2px solid black;
+    margin: 10vh auto;
+    display:grid;
+    grid-template-rows: 2fr 5fr 2fr;
+    grid-template-columns: 2fr 3fr 2fr;
+    background-color: white;
+}
+.jstripe1 {
+    grid-column: 2;
+    grid-row: 2;
+    border-radius:50%;
+    background-color: crimson;
+}
+.jstripe2 {
+    height:90px;
+    width:90px;
+    grid-column: 2;
+    grid-row: 2;
+    border-radius:50%;
+    background-color: crimson;
+}
