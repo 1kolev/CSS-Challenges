@@ -510,5 +510,38 @@ label[for="search-field"]{
     background-color: #FECC00;
 }
 
+
+/*Bulgaria flag*/
+.bulgaria-flag{
+    width:calc(150px * 1.63);
+    height:150px;
+    border:2px solid black;
+    margin: 10vh auto;
+    display:flex;
+    position: relative;
+    flex-direction: column;
+}
+.bulgaria{
+    height:33.33%;
+    width: 100%;
+}
+.bgstripe1{
+    background-color: white;
+}
+.bgstripe2{
+    background-color: #00966EFF;
+}
+.bgstripe3{
+    background-color: #D62612FF;
+}
+.bulgaria-flag > img {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: calc(50% - 62.5px);
+    right: calc(50% - 62.5px);
+    z-index: 1;
+}
+
 /*--blue: #0269A6;*/
 /*--yellow: #FECC00;*/
