@@ -468,7 +468,7 @@ label[for="search-field"]{
     border:2px solid black;
     margin: 10vh auto;
     display:grid;
-    grid-template-rows: 2fr 5fr 2fr;
+    grid-template-rows: 2fr 6fr 2fr;
     grid-template-columns: 2fr 3fr 2fr;
     background-color: white;
 }
@@ -486,3 +486,29 @@ label[for="search-field"]{
     border-radius:50%;
     background-color: crimson;
 }
+
+
+/*Sweden flag*/
+.sweden-flag{
+    height: 150px;
+    width: calc(150px * 8/5);
+    border:2px solid black;
+    margin: 10vh auto;
+    display:grid;
+    grid-template-rows: 4fr 2fr 4fr;
+    grid-template-columns: 5fr 2fr 9fr;
+    background-color: #0269A6;
+}
+.swstripe1 {
+    grid-column: 2;
+    grid-row: 1/span 3;
+    background-color: #FECC00;
+}
+.swstripe2 {
+    grid-column: 1/span 3;
+    grid-row: 2;
+    background-color: #FECC00;
+}
+
+/*--blue: #0269A6;*/
+/*--yellow: #FECC00;*/
