@@ -560,7 +560,8 @@ label[for="search-field"]{
     --btn-border-hover: #8c949e;
 
     font-family: var(--font-main);
-    width: 300px;
+    max-width: 300px;
+    width:100%;
     height:400px;
     margin: 10vh auto;
     border:2px solid black;
@@ -575,29 +576,32 @@ label[for="search-field"]{
     align-items: center;
 }
 .github-profile-layout img {
-    max-width:200px;
-    min-width:100px;
+    width: 100%;            /* Allow image to shrink/grow with its container */
+    max-width: 200px;       /* Limit the maximum width */
+    min-width: 100px;       /* Limit the minimum width */
+    height: auto;           /* Maintain aspect ratio */
     margin: 1.5em auto;
     border-radius: 50%;
     border: 1px solid var(--profile-img-border);
+    display: block;         /* Centers the image with margin: auto */
 }
 .github-profile-layout h2 {
-    margin:0 0.5em;
+    margin:0;
 }
 .github-profile-layout h3 {
-    margin:0 0.6em;
+    margin:0;
     color: var(--username-font-color);
     font-weight: var(--username-font-weight);
 }
 .github-profile-layout p {
-    margin:0.8em 0.9em;
+    margin:0.8em 0;
     font-family: var(--font-family);
 }
 .profile-details {
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    width:100%;
+    width:90%;
 }
 .profile-details button {
     font-family: var(--font-family);
@@ -605,7 +609,7 @@ label[for="search-field"]{
     color: var(--btn-color);
     border:1px solid var(--btn-border);
     margin: 0 auto;
-    width:91%;
+    width:100%;
     height:26px;
     border-radius: 5px;
 
