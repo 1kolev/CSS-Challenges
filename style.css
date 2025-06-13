@@ -743,3 +743,38 @@ label[for="search-field"]{
 .card2-bottom{
     transform: rotate(180deg);
 }
+
+
+/*Progress bar*/
+.progress-bar-container {
+    display:flex;
+    justify-content: center;
+    margin: 10vh auto;
+}
+.progress-bar {
+    background-color: dimgray;
+    width:200px;
+    height:30px;
+    border-radius: 55px;
+}
+.prog-status {
+    height:100%;
+    border-radius: 55px;
+    margin:0;
+}
+.stage-1{
+    width:25%;
+    background-color: red;
+}
+.stage-2{
+    width:50%;
+    background-color: orange;
+}
+.stage-3{
+    width:75%;
+    background-color: yellow;
+}
+.stage-4{
+    width:100%;
+    background-color: green;
+}
