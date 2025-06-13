@@ -745,7 +745,7 @@ label[for="search-field"]{
 }
 
 
-/*Progress bar*/
+/*Progress bar*/    
 .progress-bar-container {
     display:flex;
     justify-content: center;
@@ -777,4 +777,45 @@ label[for="search-field"]{
 .stage-4{
     width:100%;
     background-color: green;
+}
+
+
+/*Jeopardy Flashcard*/
+.card3-container {
+    margin: 10vh auto;
+    max-width: 250px;
+    position:relative;
+    display:flex;
+    justify-content: center;
+}
+.card3 h2{
+    text-align: center;
+}
+.card3{
+    width:100%;
+    background-color: #3f51b5;
+    border-radius: 20px;
+}
+.card3-back{
+    position:absolute;
+    align-self: center;
+    width:100%;
+}
+.card3-container:hover .card3-front{
+    transform: scaleX(0%);
+    transition-duration: 0.3s;
+}
+.card3-container:not(:hover) .card3-back{
+    transform: scaleX(0%);
+    transition-duration: 0.3s;
+}
+.card3-container:hover .card3-back{
+    transform: scaleX(100%);
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
+}
+.card3-container:not(:hover) .card3-front{
+    transform: scaleX(100%);
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
 }
