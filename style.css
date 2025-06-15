@@ -819,3 +819,39 @@ label[for="search-field"]{
     transition-duration: 0.3s;
     transition-delay: 0.3s;
 }
+
+
+/*Loading circle*/
+.loading-circle{
+    display: flex;
+    justify-content: center;
+    margin: 10vh auto;
+    width:130px;
+    height:130px;
+}
+.loader{
+    margin-left:0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 1em solid gray;
+    border-top: 1em solid teal;
+    border-radius: 50%;
+    animation-name: loading-circle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes loading-circle {
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+/*border-image-source: linear-gradient(115deg, var(--grad-color3) 5%, var(--grad-color1) 22%, var(--grad-color2) 30%, var(--grad-color4), var(--grad-color5));*/
+
+/*--grad1: #feda75;*/
+/*--grad2: #fa7e1e;*/
+/*--grad3: #d62976;*/
+/*--grad4: #962fbf;*/
+/*--grad5: #4f5bd5;*/
