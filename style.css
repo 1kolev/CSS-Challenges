@@ -848,10 +848,28 @@ label[for="search-field"]{
     }
 }
 
-/*border-image-source: linear-gradient(115deg, var(--grad-color3) 5%, var(--grad-color1) 22%, var(--grad-color2) 30%, var(--grad-color4), var(--grad-color5));*/
 
-/*--grad1: #feda75;*/
-/*--grad2: #fa7e1e;*/
-/*--grad3: #d62976;*/
-/*--grad4: #962fbf;*/
-/*--grad5: #4f5bd5;*/
+/*Progress bar 2*/
+.progress-bar-container2 {
+    margin: 10vh auto;
+    max-width:12em;
+}
+.progress-bar2 {
+    background-color: dimgray;
+    max-width:12em;
+    height:1.75em;
+    border-radius: 55px;
+}
+.prog-status2 {
+    margin:0;
+    width:5%;
+    height:100%;
+    border-radius: 55px;
+    background-color: red;
+    animation: progress-bar 4s linear infinite;
+}
+@keyframes progress-bar {
+    50% {background-color: blue;width:50%;}
+    75% {background-color: green;width:100%;}
+    100% {background-color: green;width:100%;}
+}
