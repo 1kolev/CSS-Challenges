@@ -873,3 +873,66 @@ label[for="search-field"]{
     75% {background-color: green;width:100%;}
     100% {background-color: green;width:100%;}
 }
+
+
+/*Instagram stories*/
+.stories-menu{
+    --font: 'Karla', sans-serif;
+    --font-color: #fff;
+    --grad1: #feda75;
+    --grad2: #fa7e1e;
+    --grad3: #d62976;
+    --grad4: #962fbf;
+    --grad5: #4f5bd5;
+    --viewed: gray;
+    --bg-main: #000;
+    --bg-live: red;
+
+    font-family: var(--font);
+    background-color: var(--bg-main);
+    color:var(--font-color);
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    padding: 2em 0;
+    position:relative;
+  }
+.stories-menu img {
+    height: 100px;
+    border-radius:50%;
+    margin-bottom:-.25em;
+}
+.stories-menu p {
+    text-align: center;
+}
+.stories-menu li {
+    margin: auto 1em;
+}
+.new .img-wrapper {
+    background-image:  linear-gradient(45deg, var(--grad1), var(--grad2), var(--grad3), var(--grad4), var(--grad5));
+    border-radius: 50%;
+    padding:0.2em;
+}
+.viewed .img-wrapper {
+    background-color: gray;
+    border-radius: 50%;
+    padding:0.2em;
+}
+.live {
+    position:relative;
+}
+.live .img-wrapper::after {
+    border-radius: 0;
+    width: 40px;
+    height: 20px;
+    background-color: red;
+    position:absolute;
+    top:90px;
+    margin:auto;
+    left:0;
+    right:0;
+    content: "LIVE";
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+}
