@@ -938,13 +938,13 @@ label[for="search-field"]{
 }
 
 
-/*Snake button*/
-.snake-button-container {
+/*Snake button 2*/
+.snake-button-container2 {
     position:relative;
     margin: 10vh auto;
     height: 8em;
 }
-.snake-button{
+.snake-button2{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -958,7 +958,7 @@ label[for="search-field"]{
     box-shadow:0 20px 50px rgba(0,0,0,.5);
     overflow:hidden;
 }
-.snake-button:before {
+.snake-button2:before {
     content: '';
     position: absolute;
     top: 2px;
@@ -967,7 +967,7 @@ label[for="search-field"]{
     width: 50%;
     background: #FFFFFF0C;
 }
-.snake-button span:nth-child(1) {
+.snake-button2 span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
@@ -980,7 +980,7 @@ label[for="search-field"]{
     0%{
         transform:translateX(-100%);
     }
-    18% {
+    10% {
         transform:translateX(100%);
     }
     100% {
@@ -991,7 +991,7 @@ label[for="search-field"]{
     0%{
         transform:translateY(-100%);
     }
-    85%{
+    81%{
         transform:translateY(100%);
     }
     100%{
@@ -1024,7 +1024,7 @@ label[for="search-field"]{
         transform:translateY(-100%);
     }
 }
-.snake-button span:nth-child(2) {
+.snake-button2 span:nth-child(2) {
     position: absolute;
     top: 0;
     right: 0;
@@ -1033,7 +1033,7 @@ label[for="search-field"]{
     background: linear-gradient(to bottom,#0c002b,#1779ff);
     animation: snake-animate2 2s linear infinite;
 }
-.snake-button span:nth-child(3) {
+.snake-button2 span:nth-child(3) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1042,7 +1042,7 @@ label[for="search-field"]{
     background: linear-gradient(to left,#0c002b,#1779ff);
     animation: snake-animate3 2s linear infinite;
 }
-.snake-button span:nth-child(4) {
+.snake-button2 span:nth-child(4) {
     position: absolute;
     top: 0;
     left: 0;
@@ -1053,7 +1053,128 @@ label[for="search-field"]{
 }
 
 
+/*Snake button*/
+.snake-button-container {
+    position:relative;
+    margin: 10vh auto;
+    height: 8em;
+}
+.snake-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:#1670f0;
+    background-color: #0c002b;
+    padding:30px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    text-decoration:none;
+    box-shadow:0 20px 50px rgba(0,0,0,.5);
+    overflow:hidden;
+}
+.snake-button:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255,255,255,0.05);
+}
+.snake-button span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right,#0c002b,#1779ff);
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1 {
+    0%
+    {
+        transform:translateX(-100%);
+
+    }
+    100%
+    {
+        transform:translateX(100%);
+
+    }
+}
+.snake-button span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom,#0c002b,#1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate2 {
+    0%
+    {
+        transform:translateY(-100%);
+
+    }
+    100%
+    {
+        transform:translateY(100%);
+
+    }
+}
+.snake-button span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left,#0c002b,#1779ff);
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3 {
+    0%
+    {
+        transform:translateX(100%);
+
+    }
+    100%
+    {
+        transform:translateX(-100%);
+
+    }
+}
+.snake-button span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;Add commentMore actions
+    height: 100%;
+    background: linear-gradient(to top,#0c002b,#1779ff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate4 {
+    0%
+    {
+        transform:translateY(100%);
+
+    }
+    100%
+    {
+        transform:translateY(-100%);
+
+    }
+}
+
+
 /*Github graph*/
+.graph-c2 {
+    display:block;
+    position:relative;
+}
 .graph-container {
     width:33%;
     margin:10vh auto 20vh 27%;
