@@ -14,6 +14,11 @@
 <body>
     <h1 class="header">CSS Testing Area</h1>
 
+    <div class="graph-container">
+        <div class="graph">
+
+        </div>
+    </div>
 
     <div class="snake-button-container">
     <a href="#" class="snake-button">
@@ -253,7 +258,6 @@
             for(let i = 0; i < 52; i++){
                 const week = [];
 
-                // make 7 squares and randomly assign a contribution level to each square in a week
                 for(let i = 0; i < 7; i++){
                     week.push(levels[Math.floor(Math.random() * levels.length)]);
                 }
@@ -267,11 +271,9 @@
             const contributions = generateRandomContributionStats();
 
             for(let i = 0; i < contributions.length; i++){
-                // Create an li for each week and add to graph ul
                 let graphWeek = document.createElement('ul');
                 graphWeek.classList.add(`week-${i + 1}`);
 
-                // Create a square for each contribution array, and assign a level
                 contributions[i].forEach(level => {
                     let square = document.createElement('li');
                     square.classList.add('squaree');

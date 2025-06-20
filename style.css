@@ -974,9 +974,9 @@ label[for="search-field"]{
     width: 100%;
     height: 2px;
     background: linear-gradient(to right ,#0c002b,#1779ff);
-    animation: animate1 2s linear infinite;
+    animation: snake-animate1 2s linear infinite;
 }
-@keyframes animate1 {
+@keyframes snake-animate1 {
     0%{
         transform:translateX(-100%);
     }
@@ -987,7 +987,7 @@ label[for="search-field"]{
         transform:translateX(100%);
     }
 }
-@keyframes animate2 {
+@keyframes snake-animate2 {
     0%{
         transform:translateY(-100%);
     }
@@ -999,7 +999,7 @@ label[for="search-field"]{
 
     }
 }
-@keyframes animate3 {
+@keyframes snake-animate3 {
     0%{
         transform:translateX(100%);
     }
@@ -1013,7 +1013,7 @@ label[for="search-field"]{
         transform:translateX(-100%);
     }
 }
-@keyframes animate4 {
+@keyframes snake-animate4 {
     0%{
         transform:translateY(100%);
     }
@@ -1031,7 +1031,7 @@ label[for="search-field"]{
     width: 2px;
     height: 100%;
     background: linear-gradient(to bottom,#0c002b,#1779ff);
-    animation: animate2 2s linear infinite;
+    animation: snake-animate2 2s linear infinite;
 }
 .snake-button span:nth-child(3) {
     position: absolute;
@@ -1040,7 +1040,7 @@ label[for="search-field"]{
     width: 100%;
     height: 2px;
     background: linear-gradient(to left,#0c002b,#1779ff);
-    animation: animate3 2s linear infinite;
+    animation: snake-animate3 2s linear infinite;
 }
 .snake-button span:nth-child(4) {
     position: absolute;
@@ -1049,5 +1049,43 @@ label[for="search-field"]{
     width: 2px;
     height: 100%;
     background: linear-gradient(to top,#0c002b,#1779ff);
-    animation: animate4 2s linear infinite;
+    animation: snake-animate4 2s linear infinite;
 }
+
+
+/*Github graph*/
+.graph-container {
+    width:33%;
+    margin:10vh auto 20vh 27%;
+    display:flex;
+}
+.graph {
+    display:grid;
+    grid-template-columns: repeat(52, 10px);
+    grid-template-rows: repeat(7, 10px);
+    font-size: 2em;
+    column-gap: 7px;
+    width:33%;
+    height:100%;
+}
+.graph > ul {
+    list-style-type: none;
+    padding:0;
+}
+.graph ul > li.squaree {
+    margin-bottom:-20px;
+}
+.graph ul > li::before {
+    content: '';
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    background: currentColor;
+    border-radius: 20%;
+}
+
+.graph ul > li[data-value="10"]::before {color: #00d0ff}
+.graph ul > li[data-value="5"]::before {color: #00a3c7}
+.graph ul > li[data-value="3"]::before {color: #00748f}
+.graph ul > li[data-value="2"]::before {color: #004f62}
+.graph ul > li[data-value="0"]::before {color: #003542}
