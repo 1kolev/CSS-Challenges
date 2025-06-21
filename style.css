@@ -991,6 +991,9 @@ label[for="search-field"]{
     0%{
         transform:translateY(-100%);
     }
+    10%{
+        transform:translateY(-100%);
+    }
     81%{
         transform:translateY(100%);
     }
@@ -1059,7 +1062,7 @@ label[for="search-field"]{
     margin: 10vh auto;
     height: 8em;
 }
-.snake-button{
+.snake-button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1150,7 +1153,7 @@ label[for="search-field"]{
     position: absolute;
     top: 0;
     left: 0;
-    width: 2px;Add commentMore actions
+    width: 2px;
     height: 100%;
     background: linear-gradient(to top,#0c002b,#1779ff);
     animation: animate4 2s linear infinite;
@@ -1210,3 +1213,82 @@ label[for="search-field"]{
 .graph ul > li[data-value="3"]::before {color: #00748f}
 .graph ul > li[data-value="2"]::before {color: #004f62}
 .graph ul > li[data-value="0"]::before {color: #003542}
+
+
+/*Crimson neon button*/
+.crimson-neon-button-container {
+    margin: 10vh auto;
+    display:grid;
+    place-items: center;
+}
+.crimson-neon-button-container > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Montserrat', 'Poppins', 'Arial', sans-serif;
+    letter-spacing: 0.2em;
+    color: crimson;
+    padding:30px;
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    overflow: hidden;
+}
+.crimson-neon-button-container > a:hover {
+    color: #5e0e1b;
+    background: crimson;
+    box-shadow: 0 0 10px crimson, 0 0 40px crimson, 0 0 80px crimson;
+    transition-delay: 1.25s;
+}
+.crimson-neon span {
+    position: absolute;
+    display: block;
+}
+.crimson-neon span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FF004F);
+}
+.crimson-neon:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+.crimson-neon span:nth-child(2) {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(transparent, #FF004F);
+}
+.crimson-neon:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s 0.25s;
+}
+.crimson-neon span:nth-child(3) {
+     position: absolute;
+     bottom: 0;
+     right: -100%;
+     width: 100%;
+     height: 2px;
+     background: linear-gradient(270deg, transparent, #FF004F);
+ }
+.crimson-neon:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s 0.5s;
+}
+.crimson-neon span:nth-child(4) {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FF004F);
+}
+.crimson-neon:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s 0.75s;
+}
